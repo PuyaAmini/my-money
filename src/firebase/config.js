@@ -1,5 +1,6 @@
 import firebase from "firebase/compat/app"; //core
 import "firebase/compat/firestore"; //import any other fetcher we want
+import 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -14,5 +15,6 @@ firebase.initializeApp(firebaseConfig); //connect to our firebase backend
 
 //init services
 const projectFirestore = firebase.firestore();
+const projectAuth =firebase.auth()
 
-export { projectFirestore };
+export { projectFirestore , projectAuth };
