@@ -12,11 +12,11 @@ export default function LogIn() {
   }
   return (
     <form className={styles["login-form"]} onSubmit={handleSubmit}>
-      <h2>Login</h2>
+      <h2>LogIn</h2>
       <label>
         <span>email:</span>
         <input
-          type="text"
+          type="email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
